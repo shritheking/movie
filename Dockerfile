@@ -33,11 +33,11 @@ RUN yarn db:generate
 # Build TypeScript
 RUN yarn build
 
-# Install Playwright browsers
-RUN npx playwright install chromium
-
 # Run as non-root user
 RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
+
+# Install Playwright browsers
+RUN npx playwright install chromium
 
 CMD ["node", "dist/index.js"]
