@@ -1,0 +1,42 @@
+# Dependencies
+node_modules/
+
+# Playwright
+playwright-report/
+test-results/
+playwright/.cache/
+
+# Screenshots and videos
+screenshots/
+videos/
+
+# Storage state (contains auth tokens)
+*-state.json
+auth-state.json
+
+# Environment files
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Build outputs
+dist/
+build/
+
+# Prisma
+prisma/*.db
+prisma/*.db-journal
+
+# Logs
+*.log
+
+# Additional IDE
+*.swp
+*.swo
